@@ -5,7 +5,7 @@ const should = require('chai').should();
 const { clickElement, getTextFromSelector, getTextFormLink } = require("C://Study/AutoJS/07_05/lib/commands.js");
 const {setDefaultTimeout}= require('cucumber');
 
-setDefaultTimeout(25000);
+setDefaultTimeout(45000);
 Before(async function () {
     const browser = await puppeteer.launch({ headless:false, slowMo:50 });
     const page = await browser.newPage();
