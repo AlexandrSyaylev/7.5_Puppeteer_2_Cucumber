@@ -50,5 +50,5 @@ Then('the result should be {string}', async function (string) {
 });
 
 Then('submit button in not avaible', async function () {
-    const actual = await console.error(`Selector is not clickable: .buying-scheme__chair_taken`);
+    await console.error(`Selector is not clickable: .buying-scheme__chair_taken`);
 });
