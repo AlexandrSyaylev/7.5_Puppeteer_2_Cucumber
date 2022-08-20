@@ -7,7 +7,7 @@ Feature: Booking tickets
     Scenario: Should booking two tickets to the first avaible seanes
         Given user go to first avaible seans
         When user click on first avaible seanses and check two avaible seat and submith
-        Then user get code with text
+        Then the result should be "После оплаты билет будет доступен в этом окне, а также придёт вам на почту. Покажите QR-код нашему контроллёру у входа в зал."
 
     Scenario: User can not get ticket to the checked seat
         Given user go to first avaible seans
