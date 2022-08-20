@@ -37,7 +37,7 @@ describe ("test suit in 3 tests, 2 happy, 1 sad", () => {
     test ("Can`t by one ticket to today on unavable seat", async () => {
         await page.waitForSelector(".buying-scheme__chair_taken");
         await page.click(".buying-scheme__chair_taken");
-        const actual = await console.error(`Selector is not clickable: .buying-scheme__chair_taken`);
+        await console.error(`Selector is not clickable: .buying-scheme__chair_taken`);
     });
     
 })
